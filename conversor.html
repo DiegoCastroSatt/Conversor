@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="Style/conversor.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Conversor de Unidades</h1>
+
+        <label>Valor:</label>
+        <input type="number" id="valor" placeholder="Ingrese un valor">
+
+        <label>Unidad origen:</label>
+        <select id="origen">
+            -- Longitud --
+             <option value="metro">Metro</option>
+            <option value="kilometro">Kilómetro</option>
+            <option value="centimetro">Centímetro</option>
+            <option value="milímetro">Milímetro</option>
+            <option value="micrómetro">Micrómetro</option>
+            <option value="nanometro">Nanometro</option> 
+            <option value="pulgada">Pulgada</option>    
+            <option value="pie">Pie</option>
+            <option value="yarda">Yarda</option>
+            <option value="milla">Milla</option>
+            <option value="megametro">Megámetro</option>
+            <option value="gigametro">Gigámetro</option>
+
+            -- Masa --
+            <option value="kilogramo">Kilogramo</option>
+            <option value="gramo">Gramo</option>
+            <option value="miligramo">Miligramo</option>
+            <option value="microgramo">Microgramo</option>
+            <option value="nanogramo">Nanogramo</option>
+            <option value="tonelada">Tonelada</option>
+            <option value="libra">Libra</option>
+            <option value="onza">Onza</option>
+            <option value="stone">Stone</option>
+
+            - Temperatura --
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (°R)</option>
+            <option value="reaumur">Réaumur (°Ré)</option>
+            <option value="romer">Rømer (°Rø)</option>
+            <option value="delisle">Delisle (°De)</option>
+            <option value="newton">Newton (°N)</option>
+
+        </select>
+
+        <label>Unidad destino:</label>
+        <select id="destino">
+            <option value="metro">Metro</option>
+            <option value="kilometro">Kilómetro</option>
+            <option value="centimetro">Centímetro</option>
+            <option value="milímetro">Milímetro</option>
+            <option value="micrómetro">Micrómetro</option>
+            <option value="nanometro">Nanometro</option> 
+            <option value="pulgada">Pulgada</option>    
+            <option value="pie">Pie</option>
+            <option value="yarda">Yarda</option>
+            <option value="milla">Milla</option>
+            <option value="megametro">Megámetro</option>
+            <option value="gigametro">Gigámetro</option>
+
+            <option value="gramo">Gramo</option>
+            <option value="miligramo">Miligramo</option>
+            <option value="microgramo">Microgramo</option>
+            <option value="nanogramo">Nanogramo</option>
+            <option value="tonelada">Tonelada</option>
+            <option value="libra">Libra</option>
+            <option value="onza">Onza</option>
+            <option value="stone">Stone</option>
+
+            -- Temperatura --
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+            <option value="rankine">Rankine (°R)</option>
+            <option value="reaumur">Réaumur (°Ré)</option>
+            <option value="romer">Rømer (°Rø)</option>
+            <option value="delisle">Delisle (°De)</option>
+            <option value="newton">Newton (°N)</option>
+        </select>
+        
+
+        <button onclick="convertir()">Convertir</button>
+
+        <h2 id="resultado">Resultado:</h2>
+    </div>
+
+    <script src="Src/unidades.js"></script>
+    <script src="Src/conversiones.js"></script>
+    <script src="Src/softwaremini.js"></script>
+</body>
+</html>
