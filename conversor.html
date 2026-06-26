@@ -6,87 +6,39 @@
     <link rel="stylesheet" href="Style/conversor.css">
 </head>
 <body>
-
     <div class="contenedor">
-        <h1>Conversor de Unidades</h1>
+        <h<h1>Conversor de Unidades</h1>
 
-        <label>Valor:</label>
+    <label>Categoría:</label>
+    <select id="categoria" onchange="mostrarUnidades()">
+        <option value="longitud">Longitud</option>
+        <option value="masa">Masa</option>
+        <option value="tiempo">Tiempo</option>
+        <option value="temperatura">Temperatura</option>
+        <option value="area">Área</option>
+        <option value="volumen">Volumen</option>
+        <option value="velocidad">Velocidad</option>
+        <option value="presion">Presión</option>
+        <option value="energia">Energía</option>
+        <option value="potencia">Potencia</option>
+        <option value="fuerza">Fuerza</option>
+        <option value="frecuencia">Frecuencia</option>
+        <option value="datos">Datos Informáticos</option>
+        <option value="corriente">Corriente Eléctrica</option>
+        <option value="voltaje">Voltaje</option>
+        <option value="resistencia">Resistencia Eléctrica</option>
+        <option value="angulo">Ángulo</option>
+        <option value="consumo_combustible">Consumo de Combustible</option>
+    </select>
+
+    <label>Valor:</label>
         <input type="number" id="valor" placeholder="Ingrese un valor">
 
         <label>Unidad origen:</label>
-        <select id="origen">
-            -- Longitud --
-             <option value="metro">Metro</option>
-            <option value="kilometro">Kilómetro</option>
-            <option value="centimetro">Centímetro</option>
-            <option value="milímetro">Milímetro</option>
-            <option value="micrómetro">Micrómetro</option>
-            <option value="nanometro">Nanometro</option> 
-            <option value="pulgada">Pulgada</option>    
-            <option value="pie">Pie</option>
-            <option value="yarda">Yarda</option>
-            <option value="milla">Milla</option>
-            <option value="megametro">Megámetro</option>
-            <option value="gigametro">Gigámetro</option>
-
-            -- Masa --
-            <option value="kilogramo">Kilogramo</option>
-            <option value="gramo">Gramo</option>
-            <option value="miligramo">Miligramo</option>
-            <option value="microgramo">Microgramo</option>
-            <option value="nanogramo">Nanogramo</option>
-            <option value="tonelada">Tonelada</option>
-            <option value="libra">Libra</option>
-            <option value="onza">Onza</option>
-            <option value="stone">Stone</option>
-
-            - Temperatura --
-            <option value="celsius">Celsius (°C)</option>
-            <option value="fahrenheit">Fahrenheit (°F)</option>
-            <option value="kelvin">Kelvin (K)</option>
-            <option value="rankine">Rankine (°R)</option>
-            <option value="reaumur">Réaumur (°Ré)</option>
-            <option value="romer">Rømer (°Rø)</option>
-            <option value="delisle">Delisle (°De)</option>
-            <option value="newton">Newton (°N)</option>
-
-        </select>
+        <select id="origen"></select>
 
         <label>Unidad destino:</label>
-        <select id="destino">
-            <option value="metro">Metro</option>
-            <option value="kilometro">Kilómetro</option>
-            <option value="centimetro">Centímetro</option>
-            <option value="milímetro">Milímetro</option>
-            <option value="micrómetro">Micrómetro</option>
-            <option value="nanometro">Nanometro</option> 
-            <option value="pulgada">Pulgada</option>    
-            <option value="pie">Pie</option>
-            <option value="yarda">Yarda</option>
-            <option value="milla">Milla</option>
-            <option value="megametro">Megámetro</option>
-            <option value="gigametro">Gigámetro</option>
-
-            <option value="gramo">Gramo</option>
-            <option value="miligramo">Miligramo</option>
-            <option value="microgramo">Microgramo</option>
-            <option value="nanogramo">Nanogramo</option>
-            <option value="tonelada">Tonelada</option>
-            <option value="libra">Libra</option>
-            <option value="onza">Onza</option>
-            <option value="stone">Stone</option>
-
-            -- Temperatura --
-            <option value="celsius">Celsius (°C)</option>
-            <option value="fahrenheit">Fahrenheit (°F)</option>
-            <option value="kelvin">Kelvin (K)</option>
-            <option value="rankine">Rankine (°R)</option>
-            <option value="reaumur">Réaumur (°Ré)</option>
-            <option value="romer">Rømer (°Rø)</option>
-            <option value="delisle">Delisle (°De)</option>
-            <option value="newton">Newton (°N)</option>
-        </select>
-        
+        <select id="destino"></select>
 
         <button onclick="convertir()">Convertir</button>
 
