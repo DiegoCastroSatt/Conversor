@@ -2,6 +2,14 @@
 ## Autor
 Diego Castro Satt
 
+## Tecnologías utilizadas
+
+- html
+- css
+- JavaScript
+- git
+- GitHub
+
 ## Ramas utilizadas
 - **main:** rama estable del proyecto.
 - **feature-interfaz:** desarrollo y mejoras de la interfaz gráfica.
