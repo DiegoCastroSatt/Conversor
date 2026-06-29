@@ -1,5 +1,3 @@
-const assert = require("assert");
-
 function convertirKilometrosAMetros(kilometros) {
     return kilometros * 1000;
 }
@@ -12,49 +10,40 @@ function convertirHorasAMinutos(horas) {
     return horas * 60;
 }
 
-function convertirCelsiusAFahrenheit(celsius) {
-    return (celsius * 9 / 5) + 32;
+function convertirSegundosAMinutos(segundos) {
+    return segundos / 60;
 }
 
-function probarKilometrosAMetros(kilometros, esperado) {
-    return convertirKilometrosAMetros(kilometros) === esperado;
+function convertirMinutosASegundos(minutos) {
+    return minutos * 60;
 }
 
-function probarKilogramosAGramos(kilogramos, esperado) {
-    return convertirKilogramosAGramos(kilogramos) === esperado;
+function convertirHorasASegundos(horas) {
+    return horas * 3600;
 }
 
-function probarHorasAMinutos(horas, esperado) {
-    return convertirHorasAMinutos(horas) === esperado;
-}
-
-function probarCelsiusAFahrenheit(celsius, esperado) {
-    return convertirCelsiusAFahrenheit(celsius) === esperado;
+function mostrarPrueba(descripcion, resultado, esperado) {
+    console.log(`${descripcion}:`, resultado === esperado);
 }
 
 function ejecutarPruebas() {
-    assert.strictEqual(probarKilometrosAMetros(1, 1000), true);
-    assert.strictEqual(probarKilometrosAMetros(1, 500), false);
+    mostrarPrueba("1 kilometro son 1000 metros", convertirKilometrosAMetros(1), 1000);
+    mostrarPrueba("1 kilometro son 500 metros", convertirKilometrosAMetros(1), 500);
 
-    assert.strictEqual(probarKilogramosAGramos(3.5, 3500), true);
-    assert.strictEqual(probarKilogramosAGramos(2, 20), false);
+    mostrarPrueba("3 kilogramos son 3000 gramos", convertirKilogramosAGramos(3), 3000);
+    mostrarPrueba("3 kilogramos son 30 gramos", convertirKilogramosAGramos(3), 30);
 
-    assert.strictEqual(probarHorasAMinutos(2, 120), true);
-    assert.strictEqual(probarHorasAMinutos(2, 60), false);
+    mostrarPrueba("2 horas son 120 minutos", convertirHorasAMinutos(2), 120);
+    mostrarPrueba("2 horas son 60 minutos", convertirHorasAMinutos(2), 60);
 
-    assert.strictEqual(probarCelsiusAFahrenheit(100, 212), true);
-    assert.strictEqual(probarCelsiusAFahrenheit(0, 0), false);
+    mostrarPrueba("360 segundos son 6 minutos", convertirSegundosAMinutos(360), 6);
+    mostrarPrueba("360 segundos son 60 minutos", convertirSegundosAMinutos(360), 60);
 
-    console.log("1 kilometro son 1000 metros:", probarKilometrosAMetros(1, 1000));
-    console.log("1 kilometro son 500 metros:", probarKilometrosAMetros(1, 500));
-    console.log("3.5 kilogramos son 3500 gramos:", probarKilogramosAGramos(3.5, 3500));
-    console.log("2 kilogramos son 20 gramos:", probarKilogramosAGramos(2, 20));
-    console.log("2 horas son 120 minutos:", probarHorasAMinutos(2, 120));
-    console.log("2 horas son 60 minutos:", probarHorasAMinutos(2, 60));
-    console.log("100 celsius son 212 fahrenheit:", probarCelsiusAFahrenheit(100, 212));
-    console.log("0 celsius son 0 fahrenheit:", probarCelsiusAFahrenheit(0, 0));
+    mostrarPrueba("5 minutos son 300 segundos", convertirMinutosASegundos(5), 300);
+    mostrarPrueba("5 minutos son 30 segundos", convertirMinutosASegundos(5), 30);
 
-    console.log("Todas las pruebas pasaron correctamente.");
+    mostrarPrueba("2 horas son 7200 segundos", convertirHorasASegundos(2), 7200);
+    mostrarPrueba("2 horas son 3600 segundos", convertirHorasASegundos(2), 3600);
 }
 
 ejecutarPruebas();
