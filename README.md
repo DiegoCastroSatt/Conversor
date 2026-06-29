@@ -3,7 +3,6 @@
 Diego Castro Satt
 
 ## Tecnologías utilizadas
-
 - html
 - css
 - JavaScript
@@ -36,7 +35,7 @@ rama main
 - Conversión de unidades de resistencia eléctrica.
 - Conversión de unidades de ángulo.
 - Conversión de monedas.
-- Validación de datos ingresados.
+- Validación de datos ingresados por el usuario.
 - Interfaz gráfica simple e intuitiva.
 
 ## Ejecución del mini Software
