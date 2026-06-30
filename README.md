@@ -40,8 +40,14 @@ rama main
 
 ## Ejecución del mini Software
 
-1. Clonar el repositorio con
+1. Opción 1: Clonar el repositorio con
 ```
 git clone https://github.com/DiegoCastroSatt/Conversor.git
 ```
-2. Abrir el archivo conversor.html con cualquier navegador
+2. Opción 2: Descargar el proyecto
+- Ingresa al repositorio en GitHub.
+- Haz clic en Code.
+- Selecciona Download ZIP.
+- Descomprime el archivo descargado.
+
+3. Abrir el archivo conversor.html con cualquier navegador
