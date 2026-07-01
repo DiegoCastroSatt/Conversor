@@ -51,3 +51,12 @@ git clone https://github.com/DiegoCastroSatt/Conversor.git
 - Descomprime el archivo descargado.
 
 3. Abrir el archivo conversor.html con cualquier navegador
+
+## Ejecución de pruebas (test/prueba.js)
+
+1. Si se desea agregar una nueva prueba se debe:
+- Abrir el archivo prueba.js
+- Crear o utilizar una función de conversión existente.
+- Agregar una llamada a mostrarPrueba() dentro de ejecutarPruebas().
+
+2. En terminal escribir node Test/prueba.js
